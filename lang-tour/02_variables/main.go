@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	fmt.Println("variables")
-
 	// variable with var keyword
 	// string
 	var name string
@@ -18,7 +17,7 @@ func main() {
 	fmt.Printf("another Name is :%v:\n", anotherName)
 	fmt.Printf("anotherName type :%T:\n", anotherName)
 
-	// inteter
+	// integer
 	// there are variation on int type variable like , uint8, uint64, int8, int64
 	var id int = 160133
 	fmt.Println("student id is :", id)
@@ -32,7 +31,7 @@ func main() {
 	fmt.Printf("income type :%T:\n", income)
 
 	// variable without var keyword
-	// this type variable declaration does not work outside fucntion
+	// this type variable declaration does not work outside function
 	isAdmin := true
 	isStaff := false
 	fmt.Println("isAdmin :", isAdmin)
