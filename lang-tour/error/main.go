@@ -1,15 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello Error")
-	var money float64 = 500
-	var count float64 = 0
+	fmt.Print("Enter Positive Integer Number : ")
+	var number int
+	var _, err = fmt.Scanln(&number)
 
-	amount := money / count
+	if err != nil {
+		inputError := fmt.Errorf("something went wrong. Please provide appropriate number")
+		fmt.Println("inputError : ", inputError)
+	}
 
-	fmt.Println("amount:", amount)
+	fmt.Print("Enter Positive Float Number : ")
+	var number2 float64
+	var _, _ = fmt.Scanln(&number2)
 
-	fmt.Println("next fmt:")
+	if number2 < 18.0 {
+		fmt.Println("Number is too small")
+		number2Error := errors.New("number is too small")
+		fmt.Println("number2Error : ", number2Error)
+	} else {
+		fmt.Println("Number is ok.")
+	}
 }
