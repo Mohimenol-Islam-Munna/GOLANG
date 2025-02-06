@@ -8,4 +8,8 @@ import (
 func main() {
 	fmt.Println("Hello World")
 	fmt.Println("Sum :", integers.Add(1,2))
+
+	var x int = 10
+
+	fmt.Println("x = ", x)
 }

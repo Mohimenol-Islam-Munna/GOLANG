@@ -14,5 +14,10 @@ func TestAdder(t *testing.T) {
 	} else {
 		fmt.Printf("Test case 01 pass : \n got %d, but want %d \n", got, want)
 	}
+}
 
+func ExampleAdd() {
+	sum := Add(1, 5)
+	fmt.Println(sum)
+	// Output: 6
 }
